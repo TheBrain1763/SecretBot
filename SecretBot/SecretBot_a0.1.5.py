@@ -13,7 +13,7 @@ config = { 'token': 'your-token', 'prefix': '/',}
 
 client = commands.Bot(command_prefix=config['prefix'], intents=intents)
 
-token ='MTExMTkyMzI3MDUwNjI3MDczMA.GTvdRM.A11R7drhR0sJNCNpiwNObRYw70S3Fqy9s1v8S0'
+token =' '
 
 # @client.event
 # async def on_message(message):
