@@ -35,7 +35,7 @@ hi_ENG = ["Hi", "Hello", "Wassup", "You are welcome!", "Welcome"]
     
 @client.command()
 async def version_command(message):
-    await message.send('a0.1.5')
+    await message.send('a0.2.2')
     
 @client.command(name = "command_pingg")
 async def pingg_command(ctx):
@@ -46,14 +46,27 @@ async def breakfast_command(ctx):
     random.seed(int(time.localtime()))
     choosenq=None
     choosenbf=None
-    breakfasts=["Doge","Taxist","Bread","Dragon","Pee","Poop","Tractorman","Egg"]
+    breakfasts=["Doge","Taxist","Bread","Dragon","Pee","Poop","Tractorman","Egg", "Pepepopo"]
     quality=["Fried","Woofable","Fat","Cooked","Aten","Pooped","Ugly","Beautiful","Weird","Acid","Powerful"]
     woofakbf=random.randint(1,len(breakfasts))-1
     woofakq=random.randint(1,len(quality))-1
     choosenbf=breakfasts[woofakbf]
     choosenq=quality[woofakq]
     await ctx.send(f"{ctx.author.mention} will eat {choosenq} {choosenbf}")
-
+@client.command(name="armor")
+async def armor_command(ctx):
+    random.seed(int(time.localtime()))
+    choosenq = None
+    choosena = None
+    chosenpr = None
+    chosendu = None
+    chosenth = None
+    armor = ["Wooden", "Stone", "Iron", "Diamond", "Emerald", "Fognium", "Ruby", "???", "Egg warrior", "Spiked", ]
+    quality = [":white_circle:", ":green_circle:", ":blue_circle:", ":purple_circle:", ":yellow_cirle:", ":red_circle:", "GL9I51T=9S3H5E6D"]
+    protection = ["I", "II", "III", "IV", "V", "VI", "VII", "IX", "X"]
+    durability = ["I", "II", "III", "IV", "V", "VI", "VII", "IX", "X"]
+    thorns = ["I", "II", "III", "IV", "V", "VI", "VII", "IX", "X"]
+    
 @client.event
 async def on_message(message):
     if message.author == client.user:
