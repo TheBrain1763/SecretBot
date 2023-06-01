@@ -17,7 +17,7 @@ client = commands.Bot(command_prefix='/', intents=intents, application_id = 1111
 bot = discord.Bot(intents=intents)
 # slash = SlashCommand(client, sync_commands=True, description = 'yes')
 
-token ='MTExMTkyMzI3MDUwNjI3MDczMA.GeUMo_.b25-wTwZ_2LS10u0okNekRxcP6xKqjBRJaNwy4'
+token =' '
 
 # @client.event
 # async def on_message(message):
